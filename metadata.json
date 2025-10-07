@@ -1,0 +1,5 @@
+{
+  "name": "Excel to Dashboard",
+  "description": "A dynamic dashboard that visualizes data from an uploaded Excel file.",
+  "requestFramePermissions": []
+}

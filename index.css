@@ -1,0 +1,83 @@
+/* Custom styles for a smoother user experience */
+body {
+    font-family: 'Inter', sans-serif;
+}
+.card {
+    /* Smooth transition for hover effects */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.card:hover {
+    /* Subtle enlargement and shadow on hover for a "lift" effect */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+/* Scrollbar styling for a more uniform look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1f2937; /* dark gray background */
+}
+::-webkit-scrollbar-thumb {
+    background: #4b5563; /* lighter gray */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #6b7280;
+}
+
+.favicon-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+/* Styles for the new mapping view */
+.mapping-status {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 9999px;
+    text-align: center;
+    width: fit-content;
+}
+.status-mapped {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #34d399;
+}
+.status-ignored {
+    background-color: rgba(107, 114, 128, 0.1);
+    color: #9ca3af;
+}
+
+/* Modern Button Styles */
+.control-btn {
+    @apply px-4 py-2 text-white font-bold rounded-md transition-colors text-sm cursor-pointer bg-gray-700 hover:bg-gray-600;
+}
+
+.modal-btn-primary {
+     @apply w-full sm:w-auto px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-md transition-colors text-sm;
+}
+
+.modal-btn-secondary {
+    @apply w-full sm:w-auto px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-md transition-colors text-sm;
+}
+
+.modal-btn-tertiary {
+    @apply w-full sm:w-auto px-5 py-2.5 bg-transparent hover:bg-gray-700 text-gray-300 font-bold rounded-md transition-colors text-sm;
+}
+
+.preview-text {
+    @apply text-xs italic text-gray-500 mt-1 truncate;
+}
+
+.custom-label-input {
+     @apply w-full bg-gray-600 border border-gray-500 text-white rounded-md p-2 mt-1 focus:ring-blue-500 focus:border-blue-500 text-sm;
+}
+
+.new-database-card {
+    min-height: 180px;
+}
